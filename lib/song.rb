@@ -37,6 +37,6 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort
+    @@all.sort {|x,y| y.name <=> x.name}
   end
 end
